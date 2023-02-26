@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Votre CV</title>
+</head>
+<body>
+   <link rel="stylesheet"href="style.css">
+  
+   <div id="top">
+   <label for="design-select">Choississez le design de votre cv :</label>
+  <select id="design-select" onchange="changerDesign()">
+    <option value="style1">Design 1</option>
+    <option value="style2">Design 2</option>
+    <option value="style3">Design 3</option>
+    <option value="style4">Design 4</option>
+    <option value="style5">Design 5</option>
+    
+  </select>
+</div>
+   <div class="saisie" id="cv">
+       <div> <p id="output"></p></div>
+        <div> <p id="outpu"></p></div>
+         <div> <pre id="outpute"></pre></div>
+         
+   </div> 
+   <div class="container">
+    <div class="header"><h1> VOTRE PROFIL</h1></div>
+
+    <div>
+   <form id="fabi">
+      <span>
+         <i class="fas fa-arrow-down"></i>
+
+      <label for="nom">PRENOM ET NOM :</label>
+      <input type="text" id="nom" name="nom" required><br><br>
+         </span>
+         <span>
+      <label for="email">E-mail :</label>
+      <input type="email" id="email" name="email" required><br><br>
+               </span>
+            <label for="message">EXPERIENCE :</label>
+      <textarea id="message" name="message" required></textarea><br><br>
+            <span>
+           <label for="profil">VOTRE PROFIL :</label>
+      <textarea id="profil" name="profil" required></textarea><br><br>
+      </span>
+       <span>
+           <label for="travail">Travail Actuel :</label>
+      <textarea id="travail" name="travail" required></textarea><br><br>
+      </span>
+   </form>
+   </div>
+
+</div>
+  
+   <script>
+             function changerDesign() {
+  var select = document.getElementById("design-select");
+  var design = select.value;
+  var cv = document.getElementById("cv");
+  cv.classList.remove("style1", "style2", "style3", "style4", "style5");
+  cv.classList.add(design);
+}
+console.log(changerDesign);
+      const form = document.querySelector('form');
+      const output = document.getElementById('output');
+      
+      form.addEventListener('input', (event) => {
+         const nom = document.getElementById('nom').value;
+          output.textContent = ` ${nom}\n `;
+       
+      });
+      form.addEventListener('input', (event)=>{
+         const message = document.getElementById('message').value;
+         const travail = document.getElementById('travail').value;
+         const profil = document.getElementById('profil').value;
+           outpute.textContent = ` ${message} \n${profil} \n${travail} `;
+
+
+      })
+       form.addEventListener('input', (event) => {
+      const email = document.getElementById('email').value;
+         outpu.textContent = ` ${email}\n `;
+      })
+      console.log(form);
+   </script>
+   
+  
+</body>
+</html>
+
+
+

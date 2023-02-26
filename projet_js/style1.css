@@ -1,0 +1,80 @@
+#bdt{
+   width: 30%;
+
+
+}
+body{
+   background-color: beige;
+   width: 100%;
+    background-image: url(back2.jpg);
+    font-family: sans-serif;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+body p{
+   background-color: brown;
+   font-size: xx-large;
+   text-align: center;
+}
+body li{
+   font-size: xx-large;
+   background: fixed ;
+}
+#nd{
+   width: 100%;
+   height: 700px;
+}
+#momo{
+   float: right;
+   position: absolute;
+
+}
+#thiate {
+   background-color:rgb(196, 13, 13) ;
+   width: 10%;
+   font-size: x-large;
+   flex-direction: row ;
+}
+#bdt h3{
+   font-size: xx-large;
+   text-align: center;
+}
+#bdt h4{
+   font-size: x-large;
+   text-align: center;
+
+}
+#momo h6{
+   font-size: xx-large;
+   text-align: center;
+}
+#momo h1 {
+   font-size: xx-large;
+   text-align: center;
+}
+#momo h2{
+   font-size: xx-large;
+   text-align: center;
+}
+#bdt img{
+   width=100%;
+   height=50vh;
+}
+#faubi{
+   float: center;
+   text-align: right;
+   padding: 50px;
+   margin: 20px;
+}
+#faubi button{
+   padding: 30px;
+   margin: 30px;
+  font-family: sans-serif;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+#faubi button:hover {
+   background:red ;
+
+}
